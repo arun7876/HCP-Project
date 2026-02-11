@@ -12,12 +12,6 @@ function Home({ user, onLogout }) {
   return (
     <div className="home">
       <div className="home-card">
-
-        <div className="top-bar">
-          <p>Welcome, {user?.email}</p>
-          <button className="logout-btn" onClick={handleLogout}>Logout</button>
-        </div>
-
         <h1>Smart Health Prediction System</h1>
         <p className="subtitle">AI-powered disease prediction & doctor recommendation</p>
 

@@ -50,7 +50,7 @@ function App() {
         path="/home"
         element={
           user ? (
-            <Layout user={user}>
+            <Layout user={user} onLogout={handleLogout}>
               <Home user={user} onLogout={handleLogout} />
             </Layout>
           ) : <Navigate to="/login" />
@@ -61,7 +61,7 @@ function App() {
         path="/symptoms"
         element={
           user ? (
-            <Layout user={user}>
+            <Layout user={user} onLogout={handleLogout}>
               <SymptomSelection />
             </Layout>
           ) : <Navigate to="/login" />
@@ -72,7 +72,7 @@ function App() {
         path="/result"
         element={
           user ? (
-            <Layout user={user}>
+            <Layout user={user} onLogout={handleLogout}>
               <PredictionResult />
             </Layout>
           ) : <Navigate to="/login" />
@@ -83,7 +83,7 @@ function App() {
         path="/chatbot"
         element={
           user ? (
-            <Layout user={user}>
+            <Layout user={user} onLogout={handleLogout}>
               <Chatbot />
             </Layout>
           ) : <Navigate to="/login" />
@@ -94,7 +94,7 @@ function App() {
         path="/doctor"
         element={
           user ? (
-            <Layout user={user}>
+            <Layout user={user} onLogout={handleLogout}>
               <DoctorRecommendation />
             </Layout>
           ) : <Navigate to="/login" />

@@ -3,11 +3,11 @@ import Topbar from "./topbar";
 import "../styles/layout.css";
 
 
-function Layout({ children, user }) {
+function Layout({ children, user, onLogout }) {
   return (
     <div>
       <Sidebar />
-      <Topbar user={user} />
+      <Topbar user={user} onLogout={onLogout} />
       <div className="main-content">
         {children}
       </div>
