@@ -24,7 +24,7 @@ function Topbar({ user, onLogout }) {
     <div className="topbar">
       <div className="topbar-left">
         <div className="topbar-logo">
-          <span className="logo-icon">🏥</span>
+          <img src="/20260208_224042_0000.png" alt="HCP Logo" className="logo-image"/>
           <span className="logo-text">HCP</span>
         </div>
       </div>

@@ -36,6 +36,32 @@
   letter-spacing: -0.01em;
 }
 
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-icon {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+}
+
+.nav-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0.8) invert(0.8);
+}
+
+.nav-text {
+  flex: 1;
+}
+
 .sidebar a:hover {
   background: rgba(124, 58, 237, 0.2);
   color: #FFFFFF;
@@ -60,6 +86,19 @@
 
   .sidebar a {
     padding: 8px !important;
+    font-size: 13px !important;
+  }
+
+  .nav-icon {
+    font-size: 16px !important;
+  }
+
+  .nav-icon img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .nav-text {
     font-size: 13px !important;
   }
 }
