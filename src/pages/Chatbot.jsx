@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Bot, User, Send, Mic, Loader2, Sparkles } from "lucide-react";
+import { LiaCommentsSolid } from "react-icons/lia";
 
 /* ── Typing Indicator ─────────────────────────── */
 const TypingIndicator = () => (
@@ -50,7 +51,7 @@ const MessageBubble = ({ message }) => {
 const WelcomeScreen = () => (
   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", gap: 16, padding: "0 24px", textAlign: "center" }}>
     <div style={{ width: 64, height: 64, borderRadius: 16, background: "linear-gradient(135deg,#7c3aed,#3b82f6)", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 8px 32px rgba(124,58,237,0.4)" }}>
-      <Sparkles size={28} color="white" />
+      <LiaCommentsSolid size={28} color="white" />
     </div>
     <div>
       <h3 style={{ margin: "0 0 8px", color: "white", fontSize: 20, fontWeight: 600 }}>AI Health Assistant</h3>

@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { MapPin, Users, Award, Heart, Phone, Navigation } from "lucide-react";
+import { CiMedicalCase } from "react-icons/ci";
 import "../styles/hospital.css";
 
 // Mock Hospital Data
@@ -224,6 +225,13 @@ function Hospital() {
 
                 {/* Hospital Stats */}
                 <div className="hospital-stats">
+                  <div className="stat-item">
+                    <CiMedicalCase className="stat-icon" size={20} />
+                    <div className="stat-content">
+                      <div className="stat-label">Medical</div>
+                      <div className="stat-value">Facility</div>
+                    </div>
+                  </div>
                   <div className="stat-item">
                     <Users className="stat-icon" size={20} />
                     <div className="stat-content">
